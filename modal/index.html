@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]--> 
+<head> 
+<meta charset=utf-8 />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="description" />
+<meta name="keywords" content="keywords" />
+<meta name="google-site-verification" content="" />
+<!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+        <style type="text/css">
+        .clear {
+          zoom: 1;
+          display: block;
+        }
+        </style>
+<![endif]-->
+<style>
+
+body{
+background: #fff;
+}
+        .overlay{
+	background:#000;
+	opacity:0.8;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1000;
+        display: none;
+}
+
+.modal{
+display: none;
+	background:red;
+	padding:0 20px 20px;
+	width:800px;
+	overflow:auto;
+	z-index:1001;
+	position:absolute;
+	top:0;
+	left:0;
+	box-shadow:0 0 10px #000;
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;	
+}
+</style>
+</head>
+<body>
+        <!--[if lt IE 9]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <a class="modalLink" href="#">Click Me</a>
+        <br />
+        <a class="modalLink" href="#">Click Me</a>
+        
+        <div class="overlay"></div>
+        <div class="modal"></div>
+        
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type='text/javascript' src='js/jquery.modal.js'></script>
+        <script type='text/javascript' src='js/site.js'></script>
+
+</body>
+</html>
